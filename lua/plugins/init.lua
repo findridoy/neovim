@@ -30,6 +30,14 @@ return {
     },
   },
 
+  -- nvim tree - sidebar
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      git = { enable = false },
+    },
+  },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
