@@ -52,6 +52,8 @@ return {
         "php",
         "php_only",
         "phpdoc",
+
+        "go",
       },
     },
   },
