@@ -26,6 +26,8 @@ return {
         "css-lsp",
         "prettier",
         "intelephense",
+        "gopls",
+        "golangci-lint-langserver",
       },
     },
   },

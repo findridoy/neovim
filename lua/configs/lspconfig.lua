@@ -31,3 +31,19 @@ lspconfig.intelephense.setup {
   filetypes = { "php" },
   root_dir = util.root_pattern "composer.json",
 }
+
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = util.root_pattern "go.mod",
+}
+
+lspconfig.golangci_lint_ls.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = util.root_pattern "go.mod",
+}
