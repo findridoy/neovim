@@ -28,6 +28,7 @@ return {
         "intelephense",
         "gopls",
         "golangci-lint-langserver",
+        "phpactor",
       },
     },
   },

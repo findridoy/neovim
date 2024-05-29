@@ -47,3 +47,11 @@ lspconfig.golangci_lint_ls.setup {
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_dir = util.root_pattern "go.mod",
 }
+
+lspconfig.phpactor.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  filetypes = { "blade" },
+  root_dir = util.root_pattern "composer.json",
+}
