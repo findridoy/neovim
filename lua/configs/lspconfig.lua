@@ -9,13 +9,20 @@ local util = require "lspconfig/util"
 local servers = { "html", "cssls" }
 
 -- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
-  }
-end
+-- for _, lsp in ipairs(servers) do
+--   lspconfig[lsp].setup {
+--     on_attach = on_attach,
+--     on_init = on_init,
+--     capabilities = capabilities,
+--   }
+-- end
+
+lspconfig.html.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+  filetypes = { "blade" },
+}
 
 -- typescript
 lspconfig.tsserver.setup {
