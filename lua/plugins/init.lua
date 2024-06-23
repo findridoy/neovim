@@ -1,4 +1,5 @@
 return {
+  -- conform
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
@@ -7,7 +8,6 @@ return {
     end,
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -16,6 +16,7 @@ return {
     end,
   },
 
+  -- mason
   {
     "williamboman/mason.nvim",
     opts = {
@@ -29,6 +30,7 @@ return {
         "gopls",
         "golangci-lint-langserver",
         "phpactor",
+        "blade-formatter",
       },
     },
   },
@@ -41,6 +43,7 @@ return {
     },
   },
 
+  -- tree sitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -55,6 +58,7 @@ return {
         "php",
         "php_only",
         "phpdoc",
+        "blade",
 
         "go",
       },
